@@ -381,15 +381,14 @@ nav {
 
 /* 600px — mobile */
 @media (max-width: 600px) {
+  
   .proof-strip { grid-template-columns: 1fr; }
   .hero-name { font-size: 3rem; }
   .project-cards-grid { grid-template-columns: 1fr; }
   .steps-grid { grid-template-columns: 1fr; }
 }
 
-/* ============================================================
-   HAMBURGER MENU (mobile nav)
-   ============================================================ */
+
 /* ============================================================
    HAMBURGER MENU (mobile nav)
    ============================================================ */
