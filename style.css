@@ -152,7 +152,7 @@ nav {
 .badge { font-family: var(--font-body); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.35rem 0.9rem; border: 1px solid; }
 .badge-sfmc  { border-color: var(--accent);  color: var(--accent); }
 .badge-email { border-color: var(--accent2); color: var(--accent2); }
-.badge-fe    { border-color: var(--border2); color: var(--muted); }
+.badge-fe    { border-color: var(--accent3); color: var(--accent3); }
 .hero-summary { max-width: 46ch; color: rgba(255,255,255,0.6); font-family: var(--font-body); font-weight: 300; font-size: 14px; line-height: 1.95; margin-bottom: 2.5rem; }
 .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
 
