@@ -223,7 +223,7 @@ nav {
 .card-items li::before { content: '→ '; color: var(--accent); }
 .card-empty { background: transparent !important; }
 
-.ideal-for { border: 1px solid var(--border); border-left: 3px solid var(--accent); padding: 2rem 2.5rem; }
+.ideal-for { border: 1px solid var(--border); border-left: 3px solid var(--accent); padding: 2rem 2.5rem; background: var(--surface); }
 .ideal-label { font-family: var(--font-body); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; }
 .ideal-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .ideal-tag { font-family: var(--font-body); font-size: 11px; color: var(--muted); padding: 0.3rem 0.85rem; border: 1px solid var(--border); transition: all 0.2s; }
