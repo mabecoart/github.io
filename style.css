@@ -1,0 +1,117 @@
+/* ── Variables ── */
+:root {
+  --bg:        #0e0e0e;
+  --surface:   #161616;
+  --surface2:  #1c1c1c;
+  --accent:    #F7931E;
+  --accent2:   #f9b46a;
+  --text:      #FFFFFF;
+  --muted:     #9a9590;
+  --border:    rgba(255,255,255,0.08);
+  --border2:   rgba(255,255,255,0.15);
+  --font-title:'Signika', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg); color: var(--text);
+  font-family: var(--font-body); font-weight: 400;
+  font-size: 15px; line-height: 1.7; overflow-x: hidden;
+}
+
+body::before {
+  content: ''; position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none; z-index: 999; opacity: 0.3;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 1rem 3rem;
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(16px);
+  background: rgba(14,14,14,0.85);
+}
+.nav-brand { display: flex; align-items: center; gap: 0.85rem; text-decoration: none; }
+.nav-logo-img { height: 38px; width: 38px; border-radius: 50%; object-fit: cover; }
+.nav-brand-name { font-family: var(--font-title); font-weight: 700; font-size: 1rem; color: var(--accent); letter-spacing: 0.02em; }
+.nav-links { display: flex; gap: 2.5rem; list-style: none; align-items: center; }
+.nav-links a { color: var(--muted); text-decoration: none; font-family: var(--font-body); font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--text); }
+
+/* ── FOOTER ── */
+.site-footer {
+  border-top: 1px solid var(--border); padding: 1.75rem 3rem;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 1rem;
+}
+.footer-left { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.avail-badge { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-body); font-size: 11px; letter-spacing: 0.08em; color: var(--muted); }
+.avail-dot { width: 6px; height: 6px; border-radius: 50%; background: #4caf50; box-shadow: 0 0 6px #4caf50; animation: pulse 2s ease infinite; }
+.btn-hire-footer { display: inline-block; padding: 0.45rem 1.2rem; font-family: var(--font-body); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; background: var(--accent); color: var(--bg); text-decoration: none; border: 1px solid var(--accent); transition: all 0.25s; }
+.btn-hire-footer:hover { background: transparent; color: var(--accent); }
+.footer-right { font-family: var(--font-body); font-size: 11px; color: var(--muted); letter-spacing: 0.06em; }
+
+/* ── BUTTONS ── */
+.btn { display: inline-block; padding: 0.75rem 2rem; font-family: var(--font-body); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; border: 1px solid; transition: all 0.25s; cursor: pointer; }
+.btn-primary { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+.btn-primary:hover { background: transparent; color: var(--accent); }
+.btn-ghost { background: transparent; color: var(--text); border-color: var(--border2); }
+.btn-ghost:hover { border-color: var(--text); }
+
+/* ── PAGE HEADER (inner pages) ── */
+.page-header {
+  padding: 9rem 3rem 4rem;
+  border-bottom: 1px solid var(--border);
+  display: flex; justify-content: space-between; align-items: flex-end;
+  flex-wrap: wrap; gap: 2rem;
+}
+.page-eyebrow { font-family: var(--font-body); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; }
+.page-eyebrow::before { content: '// '; opacity: 0.5; }
+.page-title { font-family: var(--font-title); font-size: clamp(2.8rem, 5vw, 4.5rem); font-weight: 700; color: var(--text); line-height: 1.0; margin-bottom: 1rem; }
+.page-subtitle { max-width: 54ch; font-family: var(--font-body); font-weight: 300; font-size: 14px; color: rgba(255,255,255,0.6); line-height: 1.9; }
+
+/* ── CTA BANNER ── */
+.cta-banner {
+  padding: 5rem 3rem;
+  display: flex; justify-content: space-between; align-items: center;
+  border-top: 1px solid var(--border); flex-wrap: wrap; gap: 2rem;
+}
+.cta-banner-title { font-family: var(--font-title); font-size: clamp(1.8rem, 3vw, 2.8rem); font-weight: 700; margin-bottom: 0.5rem; }
+.cta-banner-sub { font-family: var(--font-body); font-weight: 300; font-size: 13px; color: var(--muted); }
+.cta-banner-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+/* ── BG ORB ── */
+.bg-orb { position: absolute; border-radius: 50%; filter: blur(100px); pointer-events: none; z-index: 0; }
+.bg-orb-1 { width: 600px; height: 600px; background: rgba(247,147,30,0.06); bottom: -150px; right: -100px; }
+.bg-orb-2 { width: 350px; height: 350px; background: rgba(247,147,30,0.04); top: 5%; left: 25%; }
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp   { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
+@keyframes fadeDown { from { opacity:0; transform:translateY(-10px); } to { opacity:1; transform:translateY(0); } }
+@keyframes fadeIn   { from { opacity:0; } to { opacity:1; } }
+@keyframes pulse    { 0%,100%{opacity:1;} 50%{opacity:0.3;} }
+.anim-1 { opacity:0; animation: fadeUp 0.6s ease 0.1s both; }
+.anim-2 { opacity:0; animation: fadeUp 0.6s ease 0.25s both; }
+.anim-3 { opacity:0; animation: fadeUp 0.6s ease 0.4s both; }
+.anim-4 { opacity:0; animation: fadeUp 0.6s ease 0.55s both; }
+.anim-5 { opacity:0; animation: fadeUp 0.6s ease 0.7s both; }
+.anim-6 { opacity:0; animation: fadeUp 0.6s ease 0.85s both; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  nav { padding: 1rem 1.5rem; }
+  .nav-links { gap: 1.5rem; }
+  .page-header { padding: 7rem 1.5rem 3rem; }
+  .cta-banner { padding: 3rem 1.5rem; flex-direction: column; align-items: flex-start; }
+  .site-footer { flex-direction: column; text-align: center; padding: 1.5rem; }
+  .footer-left { justify-content: center; }
+}
+@media (max-width: 600px) {
+  .nav-links li:not(:last-child) { display: none; }
+}
