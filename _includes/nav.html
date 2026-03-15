@@ -1,0 +1,12 @@
+<nav>
+  <a href="{{ '/' | relative_url }}" class="nav-brand">
+    <img src="{{ '/images/logo_mabeco.png' | relative_url }}" alt="María Copello" class="nav-logo-img" />
+    <span class="nav-brand-name">María Copello</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="{{ '/services.html' | relative_url }}" {% if page.nav == 'services' %}class="active"{% endif %}>Services</a></li>
+    <li><a href="{{ '/portfolio.html' | relative_url }}" {% if page.nav == 'portfolio' %}class="active"{% endif %}>Portfolio</a></li>
+    <li><a href="{{ '/process.html' | relative_url }}" {% if page.nav == 'process' %}class="active"{% endif %}>Process</a></li>
+    <li><a href="{{ '/contact.html' | relative_url }}" {% if page.nav == 'contact' %}class="active"{% endif %}>Contact</a></li>
+  </ul>
+</nav>
