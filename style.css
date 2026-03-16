@@ -1,5 +1,5 @@
 /* ============================================================
-   MABECOART — María Copello Portfolio
+   MABECOART — María Belén Copello Portfolio
    ============================================================ */
 
 /* ── Variables ── */
@@ -211,6 +211,7 @@ nav {
 
 .cards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); margin-bottom: 3rem; }
 .service-card { background: var(--surface); padding: 2.5rem; position: relative; overflow: hidden; transition: background 0.2s; }
+.cards-grid--3 { grid-template-columns: 1fr 1fr 1fr; }
 .service-card:hover { background: var(--surface2); }
 .service-card::before { content: ''; position: absolute; top: 0; left: 0; width: 2px; height: 0; background: var(--accent); transition: height 0.4s; }
 .service-card:hover::before { height: 100%; }
@@ -358,6 +359,7 @@ nav {
   .tab-nav { padding: 0 1.5rem; overflow-x: auto; }
   .service-section { padding: 3rem 1.5rem; }
   .cards-grid { grid-template-columns: 1fr; }
+  .cards-grid--3 { grid-template-columns: 1fr; }
 
   /* Portfolio */
   .filter-bar { padding: 1.5rem; }
