@@ -8,3 +8,54 @@
   </div>
   <div class="footer-right">© 2026 mabecoart</div>
 </footer>
+<footer class="site-footer">
+  <div class="footer-left">
+    <span class="avail-badge">
+      <span class="avail-dot"></span>
+      Available for freelance projects
+    </span>
+    <a href="mailto:mabecoart@gmail.com" class="btn-hire-footer">Hire Me</a>
+  </div>
+  <div class="footer-right">© 2026 mabecoart</div>
+</footer>
+
+{% if page.carousel %}
+<script>
+  let current = 0;
+  const slides = document.querySelectorAll('.carousel-slide');
+  const track = document.getElementById('carousel-track');
+  const dotsContainer = document.getElementById('carousel-dots');
+
+  slides.forEach((_, i) => {
+    const dot = document.createElement('button');
+    dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+    dot.onclick = () => goTo(i);
+    dotsContainer.appendChild(dot);
+  });
+
+  function goTo(index) {
+    current = Math.max(0, Math.min(index, slides.length - 1));
+    track.style.transform = 'translateX(-' + (current * 100) + '%)';
+    document.querySelectorAll('.carousel-dot').forEach((d, i) => {
+      d.classList.toggle('active', i === current);
+    });
+  }
+
+  function moveCarousel(dir) { goTo(current + dir); }
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowLeft') moveCarousel(-1);
+    if (e.key === 'ArrowRight') moveCarousel(1);
+  });
+
+  let startX = 0;
+  track.addEventListener('touchstart', function(e) {
+    startX = e.touches[0].clientX;
+  });
+  track.addEventListener('touchend', function(e) {
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 50) moveCarousel(diff > 0 ? 1 : -1);
+  });
+</script>
+{% endif %}
