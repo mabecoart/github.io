@@ -78,7 +78,7 @@ nav {
 /* ============================================================
    SHARED — Buttons
    ============================================================ */
-.btn { display: inline-block; padding: 0.75rem 2rem; font-family: var(--font-body); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; border: 1px solid; transition: all 0.25s; cursor: pointer; }
+.btn { display: inline-block; padding: 0.75rem 2rem; font-family: var(--font-body); font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; border: 2px solid; transition: all 0.25s; cursor: pointer; border-radius: 40px;}
 .btn-primary { background: var(--accent); color: var(--bg); border-color: var(--accent); }
 .btn-primary:hover { background: transparent; color: var(--accent); }
 .btn-ghost { background: transparent; color: var(--text); border-color: var(--border2); }
