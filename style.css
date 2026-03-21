@@ -52,12 +52,12 @@ nav {
   background: rgba(14,14,14,0.85);
 }
 .nav-brand { display: flex; align-items: center; gap: 0.85rem; text-decoration: none; }
+.nav-brand:focus-visible { outline: none;}
 .nav-logo-img { height: 38px; width: 38px; border-radius: 50%; object-fit: cover; }
 .nav-brand-name { font-family: var(--font-title); font-weight: 700; font-size: 1rem; color: var(--accent); letter-spacing: 0.02em; }
 .nav-links { display: flex; gap: 2.5rem; list-style: none; align-items: center; }
 .nav-links a { color: var(--muted); text-decoration: none; font-family: var(--font-body); font-size: 13px; letter-spacing: 0.06em; text-transform: uppercase; transition: color 0.2s; }
 .nav-links a:hover, .nav-links a.active { color: var(--text); }
-
 
 /* ============================================================
    SHARED — Footer
@@ -149,7 +149,7 @@ nav {
 .hero-location { font-family: var(--font-body); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem; }
 .location-dot { width: 6px; height: 6px; border-radius: 50%; background: #4caf50; box-shadow: 0 0 8px #4caf50; flex-shrink: 0; animation: pulse 2s ease infinite; }
 .hero-badges { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2rem; }
-.badge { font-family: var(--font-body); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.35rem 0.9rem; border: 1px solid; }
+.badge { font-family: var(--font-body); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.35rem 0.9rem; border: 0.75px solid; }
 .badge-sfmc  { border-color: var(--accent);  color: var(--accent); }
 .badge-email { border-color: var(--accent2); color: var(--accent2); }
 .badge-fe    { border-color: var(--accent3); color: var(--accent3); }
