@@ -149,10 +149,11 @@ nav {
 .hero-location { font-family: var(--font-body); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem; }
 .location-dot { width: 6px; height: 6px; border-radius: 50%; background: #4caf50; box-shadow: 0 0 8px #4caf50; flex-shrink: 0; animation: pulse 2s ease infinite; }
 .hero-badges { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2rem; }
-.badge { font-family: var(--font-body); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.35rem 0.9rem; border: 0.75px solid; }
-.badge-sfmc  { border-color: var(--accent);  color: var(--accent); }
-.badge-email { border-color: var(--accent2); color: var(--accent2); }
-.badge-fe    { border-color: var(--accent3); color: var(--accent3); }
+.badge { font-family: var(--font-body); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.35rem 0.9rem; border: 1px solid; }
+.badge-1  { border-color: var(--accent);  color: var(--accent); }
+.badge-2 { border-color: var(--accent2); color: var(--accent2); }
+.badge-3    { border-color: var(--accent3); color: var(--accent3); }
+
 .hero-summary { max-width: 46ch; color: rgba(255,255,255,0.6); font-family: var(--font-body); font-weight: 300; font-size: 14px; line-height: 1.95; margin-bottom: 2.5rem; }
 .hero-cta { display: flex; gap: 1rem; flex-wrap: wrap; }
 
@@ -199,10 +200,13 @@ nav {
 .tab-btn:hover { color: var(--text); }
 .tab-btn.active { color: var(--text); border-bottom-color: var(--accent); }
 
-.cert-badge { display: inline-flex; flex-direction: column; align-items: center; border: 1px solid var(--border2); padding: 1.25rem 2rem; gap: 0.3rem; text-align: center; }
+.cert-badge { display: inline-flex; flex-direction: column; align-items: center; border: 1px solid var(--border2); padding: 1.25rem 2rem; gap: 0.3rem; text-align: center; margin: 0 10px; }
 .cert-badge-label { font-family: var(--font-body); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); }
 .cert-badge-name { font-family: var(--font-title); font-size: 1rem; font-weight: 700; color: var(--text); }
 .cert-badge-since { font-family: var(--font-body); font-size: 10px; color: var(--muted); }
+.cert-badge-credential { font-family: var(--font-body); font-size: 10px; color: var(--accent2); text-decoration: none; }
+
+
 
 .service-section { padding: 5rem 3rem; border-bottom: 1px solid var(--border); scroll-margin-top: 110px; }
 .section-eyebrow { font-family: var(--font-body); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.75rem; }
