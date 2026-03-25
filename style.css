@@ -204,7 +204,9 @@ nav {
 .cert-badge-label { font-family: var(--font-body); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); }
 .cert-badge-name { font-family: var(--font-title); font-size: 1rem; font-weight: 700; color: var(--text); }
 .cert-badge-since { font-family: var(--font-body); font-size: 10px; color: var(--muted); }
-.cert-badge-credential { font-family: var(--font-body); font-size: 10px; color: var(--accent2); text-decoration: none; }
+.cert-badge-credential { font-family: var(--font-body); font-size: 10px; letter-spacing: 0.14em; color: var(--accent2); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+.cert-badge-credential:hover { border-color: var(--accent); }
+
 
 
 
