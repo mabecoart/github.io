@@ -283,7 +283,7 @@ nav {
 .skill-card:hover::after { width: 100%; }
 .skill-card__icon {width: 40px; height: 40px; margin-bottom: 20px;color: var(--accent);}
 .skill-card__title {font-family: var(--font-title); font-size: 18px;font-weight: 700; margin-bottom: 10px; color: var(--text-primary); }
-.skill-card__desc { font-size: 14px;color: var(--text-muted);line-height: 1.7; font-weight: 300;}
+.skill-card__desc { font-size: 14px;color: var(--muted);line-height: 1.7; font-weight: 300;}
 .about-section .steps-grid {margin-top: 5rem;} 
 
 /* ============================================================
