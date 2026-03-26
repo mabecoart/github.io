@@ -1,11 +1,11 @@
 title: María Copello
-description: Salesforce Marketing Cloud Specialist — Email Developer & Front-End Developer
+description: Digital Marketing Developer
 url: "https://mabecoart.com"
 baseurl: ""
 
 # Build settings
 markdown: kramdown
-permalink: /:path.html
+permalink: pretty
 
 # Exclude from build
 exclude:
