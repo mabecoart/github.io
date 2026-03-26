@@ -635,7 +635,7 @@ nav {
 .case-impact-list li::before { content: '→ '; color: var(--accent); }
 
 /* Carousel */
-.carousel { position: relative; overflow: hidden; border: 1px solid var(--border); }
+.carousel { position: relative; overflow: hidden; border: none; }
 .carousel-track { display: flex; transition: transform 0.4s ease; }
 .carousel-slide { min-width: 100%; }
 .carousel-slide img { width: 100%; display: block; object-fit: cover; max-height: 580px; }
