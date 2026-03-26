@@ -383,6 +383,7 @@ nav {
 
   /* About */
   .portrait-badge {display: none;}
+  .about-section { padding: 3rem 1.5rem; }
   .skills__grid { grid-template-columns: 1fr 1fr; margin-top: 3rem;}
   .about-section .steps-grid {margin-top: 3rem;}
 
