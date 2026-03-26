@@ -285,14 +285,18 @@ nav {
       border: 1px solid var(--border);
       border-radius: var(--radius);
       overflow: hidden;
+      margin-top: 5rem;
     }
 
     .skill-card {
-      background: var(--bg-card);
-      padding: 36px 32px;
-      transition: background .2s;
+      background: var(--surface);
+      padding: 2.5rem 2rem;
+      transition: background 0.2s;
     }
-    .skill-card:hover { background: var(--bg-card-2); }
+
+    .skill-card:hover { background: var(--surface2); }
+    .skill-card::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--accent); transition: width 0.4s; }
+    .skill-card:hover::after { width: 100%; }
 
     .skill-card__icon {
       width: 40px;
@@ -415,7 +419,7 @@ nav {
 
   /* About */
   .portrait-badge {display: none;}
-  .skills__grid { grid-template-columns: 1fr 1fr; }
+  .skills__grid { grid-template-columns: 1fr 1fr; margin-top: 3rem;}
   .about-section .steps-grid {margin-top: 3rem;}
 
   /* Portfolio */
@@ -440,7 +444,6 @@ nav {
 
 /* 600px — mobile */
 @media (max-width: 600px) {
-  
   .proof-strip { grid-template-columns: 1fr; }
   .hero-name { font-size: 3rem; }
   .project-cards-grid { grid-template-columns: 1fr; }
