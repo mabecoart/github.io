@@ -201,15 +201,24 @@ description: Selected CRM, lifecycle marketing, and email development projects b
 </section>
 
 <script>
-  document.querySelectorAll('.filter-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const filter = btn.dataset.filter;
-      document.querySelectorAll('.project-card, .snippet-card').forEach(card => {
-        const tags = card.dataset.tags || '';
-        card.classList.toggle('hidden', filter !== 'all' && !tags.includes(filter));
-      });
-    });
+function filterSelection(tag) {
+  const cards = document.querySelectorAll(".portfolio-item");
+
+  cards.forEach(card => {
+    const raw = card.getAttribute("data-tags");
+
+    if (!raw) return;
+
+    const tags = raw
+      .toLowerCase()
+      .split(",")
+      .map(t => t.trim());
+
+    if (tag === "all" || tags.includes(tag.toLowerCase())) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none"; 
+    }
   });
+}
 </script>
