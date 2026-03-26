@@ -200,12 +200,12 @@ nav {
 .tab-btn:hover { color: var(--text); }
 .tab-btn.active { color: var(--text); border-bottom-color: var(--accent); }
 
-.cert-badge { display: inline-flex; flex-direction: column; align-items: center; border: 1px solid var(--border2); padding: 1.25rem 2rem; gap: 0.3rem; text-align: center; margin: 0 10px; }
+.cert-badge { display: inline-flex; flex-direction: column; align-items: center; border: 1px solid var(--border2); padding: 1.25rem 2rem; gap: 0.3rem; text-align: center; margin: 0 10px; min-width: 260px; }
 .cert-badge-label { font-family: var(--font-body); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); }
 .cert-badge-name { font-family: var(--font-title); font-size: 1rem; font-weight: 700; color: var(--text); }
 .cert-badge-since { font-family: var(--font-body); font-size: 10px; color: var(--muted); }
 .cert-badge-credential { font-family: var(--font-body); font-size: 10px; letter-spacing: 0.14em; color: var(--accent2); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.2s; }
-.cert-badge-credential:hover { border-color: var(--accent); }
+.cert-badge-credential:hover { border-color: var(--accent2); }
 
 
 
