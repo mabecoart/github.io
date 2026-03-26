@@ -5,7 +5,7 @@ baseurl: ""
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: /:path.html
 
 # Exclude from build
 exclude:
