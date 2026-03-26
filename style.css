@@ -316,6 +316,7 @@ nav {
       font-weight: 300;
     }
 
+    .about-section .steps-grid {margin-top: 5rem;} 
 
 /* ============================================================
    PAGE — Process (process.html)
@@ -415,6 +416,7 @@ nav {
   /* About */
   .portrait-badge {display: none;}
   .skills__grid { grid-template-columns: 1fr 1fr; }
+  .about-section .steps-grid {margin-top: 3rem;}
 
   /* Portfolio */
   .filter-bar { padding: 1.5rem; }
