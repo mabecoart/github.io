@@ -3,31 +3,29 @@
     <img src="{{ '/images/logo_mabeco.png' | relative_url }}" alt="María Belén Copello" class="nav-logo-img" />
     <span class="nav-brand-name">María Copello</span>
   </a>
-
   <ul class="nav-links">
     <li><a href="{{ '/services.html' | relative_url }}" {% if page.nav == 'services' %}class="active"{% endif %}>Services</a></li>
     <li><a href="{{ '/portfolio.html' | relative_url }}" {% if page.nav == 'portfolio' %}class="active"{% endif %}>Portfolio</a></li>
+    <li><a href="{{ '/about.html' | relative_url }}" {% if page.nav == 'about' %}class="active"{% endif %}>About</a></li>
     <li><a href="{{ '/process.html' | relative_url }}" {% if page.nav == 'process' %}class="active"{% endif %}>Process</a></li>
     <li><a href="{{ '/contact.html' | relative_url }}" {% if page.nav == 'contact' %}class="active"{% endif %}>Contact</a></li>
   </ul>
-
   <button class="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" onclick="toggleMenu(this)">
     <span></span>
     <span></span>
     <span></span>
   </button>
 </nav>
-
 <div class="nav-mobile-menu" id="mobile-menu">
   <ul>
     <li><a href="{{ '/services.html' | relative_url }}" {% if page.nav == 'services' %}class="active"{% endif %}>Services</a></li>
     <li><a href="{{ '/portfolio.html' | relative_url }}" {% if page.nav == 'portfolio' %}class="active"{% endif %}>Portfolio</a></li>
+    <li><a href="{{ '/about.html' | relative_url }}" {% if page.nav == 'about' %}class="active"{% endif %}>About</a></li>
     <li><a href="{{ '/process.html' | relative_url }}" {% if page.nav == 'process' %}class="active"{% endif %}>Process</a></li>
     <li><a href="{{ '/contact.html' | relative_url }}" {% if page.nav == 'contact' %}class="active"{% endif %}>Contact</a></li>
     <li><a href="mailto:mabecoart@gmail.com" class="nav-mobile-hire">Hire Me</a></li>
   </ul>
 </div>
-
 <script>
   function toggleMenu(btn) {
     const menu = document.getElementById('mobile-menu');
