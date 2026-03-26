@@ -254,10 +254,14 @@ nav {
 .card-body { padding: 1.5rem; }
 .card-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
 .card-tag { font-family: var(--font-body); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.2rem 0.6rem; border: 1px solid var(--muted); color: var(--muted); }
+/*
 .card-tag.tag-sfmc   { border-color: rgba(247,147,30,0.4); color: var(--accent); }
 .card-tag.tag-design { border-color: rgba(249,180,106,0.4); color: var(--accent2); }
 .card-tag.tag-lab    { border-color: rgba(255,255,255,0.2); color: var(--muted); }
 .card-tag.tag-code   { border-color: rgba(255,255,255,0.2); color: var(--muted); }
+*/
+.card-tag.highlight-active {background-color: var(--accent); color: var(--bg);border-color: var(--accent);opacity: 1;}
+.filter-btn.active:not([data-filter="all"]) ~ .all-portfolio .card-tag:not(.highlight-active) {opacity: 0.4;}
 .card-name { font-family: var(--font-title); font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; }
 .card-desc { font-family: var(--font-body); font-weight: 300; font-size: 12px; color: var(--muted); line-height: 1.8; margin-bottom: 1rem; }
 .card-highlights { font-family: var(--font-body); font-size: 11px; color: rgba(247,147,30,0.7); letter-spacing: 0.04em; margin-bottom: 1.25rem;}
