@@ -545,10 +545,12 @@ nav {
 /* Card tags */
 .card-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 0.75rem; }
 .card-tag { font-family: var(--font-body); font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; padding: 0.2rem 0.6rem; border: 1px solid var(--border); color: var(--muted); }
+/*
 .card-tag.tag-dev    { border-color: rgba(247,147,30,0.4);  color: var(--accent); }
 .card-tag.tag-auto   { border-color: rgba(249,179,97,0.4);  color: var(--accent2); }
 .card-tag.tag-design { border-color: rgba(252,212,165,0.4); color: var(--accent3); }
 .card-tag.tag-lab    { border-color: rgba(255,255,255,0.2); color: var(--muted); }
+*/
 
 /* Card content */
 .card-name { font-family: var(--font-title); font-size: 1.1rem; font-weight: 700; color: var(--text); margin-bottom: 0.5rem; }
