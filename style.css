@@ -66,13 +66,12 @@ nav {
   border-top: 1px solid var(--border); padding: 1.75rem 3rem;
   display: flex; justify-content: space-between; align-items: center;
   flex-wrap: wrap; gap: 1rem;
+  font-family: var(--font-body); font-size: 11px; color: var(--muted); letter-spacing: 0.06em; 
 }
-.footer-left { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
-.avail-badge { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-body); font-size: 11px; letter-spacing: 0.08em; color: var(--muted); }
+.avail-badge { display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-body); font-size: 11px; letter-spacing: 0.08em; color: var(--muted); padding-right: 10px;; }
 .avail-dot { width: 6px; height: 6px; border-radius: 50%; background: #4caf50; box-shadow: 0 0 6px #4caf50; animation: pulse 2s ease infinite; }
 .btn-hire-footer { display: inline-block; padding: 0.45rem 1.2rem; font-family: var(--font-body); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; background: var(--accent); color: var(--bg); text-decoration: none; border: 1px solid var(--accent); transition: all 0.25s; border-radius: 40px;}
 .btn-hire-footer:hover { background: transparent; color: var(--accent); }
-.footer-right { font-family: var(--font-body); font-size: 11px; color: var(--muted); letter-spacing: 0.06em; }
 
 
 /* ============================================================
