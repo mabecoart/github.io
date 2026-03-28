@@ -245,9 +245,11 @@ nav {
 .portfolio-section-title { font-family: var(--font-title); font-size: 1.1rem; font-weight: 700; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 2rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border); }
 
 .project-cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); }
-.project-card { background: var(--surface); overflow: hidden; transition: background 0.2s; }
+.project-card { background: var(--surface); overflow: hidden; transition: background 0.2s; position: relative;}
 .project-card:hover { background: var(--surface2); }
 .project-card.hidden { display: none; }
+.project-card::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--accent); transition: width 0.4s; }
+.project-card:hover::after { width: 100%; }
 .card-image { width: 100%; aspect-ratio: 3/2; object-fit: cover; display: block; filter: grayscale(20%); transition: filter 0.3s; }
 .project-card:hover .card-image { filter: grayscale(0%); }
 .card-body { padding: 1.5rem; }
@@ -622,8 +624,10 @@ nav {
 
 /* Results numbers */
 .case-results { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); margin-bottom: 3rem; }
-.case-result-card { background: var(--bg); padding: 2.5rem 2rem; transition: background 0.2s; }
+.case-result-card { background: var(--bg); padding: 2.5rem 2rem; transition: background 0.2s; position: relative;}
 .case-result-card:hover { background: var(--surface2); }
+.case-result-card::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--accent); transition: width 0.4s; }
+.case-result-card:hover::after { width: 100%; }
 .case-result-num { font-family: var(--font-title); font-size: 3.5rem; font-weight: 700; color: var(--accent); line-height: 1; display: block; margin-bottom: 0.5rem; }
 .case-result-num sup { font-size: 1.4rem; }
 .case-result-title { font-family: var(--font-title); font-size: 1rem; font-weight: 700; color: var(--text); margin-bottom: 0.4rem; }
