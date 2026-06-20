@@ -7,6 +7,9 @@ baseurl: ""
 markdown: kramdown
 permalink: /:path.html
 
+plugins:
+  - jekyll-sitemap
+
 # Exclude from build
 exclude:
   - README.md
